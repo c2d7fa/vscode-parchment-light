@@ -1,0 +1,21 @@
+{
+  "name": "basic-light",
+  "displayName": "basic-light",
+  "description": "Almost monochromatic, light color theme with highlighted comments",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.45.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Basic Light",
+        "uiTheme": "vs",
+        "path": "./themes/basic-light-color-theme.json"
+      }
+    ]
+  }
+}
