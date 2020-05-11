@@ -30,7 +30,7 @@
     {
       "scope": "comment",
       "settings": {
-        "foreground": "#5a8a83",
+        "foreground": "#627f80",
         "fontStyle": "bold"
       }
     },
@@ -62,6 +62,13 @@
       "scope": "punctuation.terminator",
       "settings": {
         "foreground": "#a7a4a4"
+      }
+    },
+    {
+      "scope": "string",
+      "settings": {
+        "foreground": "#7c8a7c",
+        "fontStyle": "italic"
       }
     }
   ]
