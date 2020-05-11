@@ -9,7 +9,22 @@
     "editor.selectionBackground": "#cce1eb",
     "editor.selectionForeground": "#5b6b72",
     "editorLineNumber.foreground": "#dad7d6",
-    "editorLineNumber.activeForeground": "#b4afae"
+    "editorLineNumber.activeForeground": "#b4afae",
+
+    // Editor groups and tabs
+    "editorGroupHeader.tabsBackground": "#f0eeec",
+    "tab.inactiveBackground": "#f0eeec",
+    "tab.inactiveForeground": "#b4afae",
+    "tab.border": "#00000000",
+
+    // Activity bar
+    "activityBar.background": "#e2e0dd",
+    "activityBar.inactiveForeground": "#b4afae",
+    "activityBar.foreground": "#817b78",
+
+    // Status bar
+    "statusBar.background": "#e2e0dd",
+    "statusBar.foreground": "#817b78"
   },
   "tokenColors": [
     {
