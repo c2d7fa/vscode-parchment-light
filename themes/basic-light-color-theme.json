@@ -5,17 +5,30 @@
     "editor.background": "#fcf9f6",
     "editor.foreground": "#484240",
     "widget.shadow": "#e0ddd9",
+    "editorLineNumber.foreground": "#dad7d6",
+    "editorLineNumber.activeForeground": "#b4afae",
+    "editorWhitespace.foreground": "#48424018",
+    "editorRuler.foreground": "#48424018",
+
+    // Highlights
+    "editorCursor.foreground": "#328da8",
     "selection.background": "#cce1eb",
     "editor.selectionBackground": "#cce1eb",
     "editor.selectionForeground": "#5b6b72",
-    "editorLineNumber.foreground": "#dad7d6",
-    "editorLineNumber.activeForeground": "#b4afae",
+    "editor.selectionHighlightBackground": "#00000000",
+    "editor.wordHighlightBackground": "#00000000",
+    "editor.hoverHighlightBackground": "#c0d5d640",
+    "editor.selectionHighlightBorder": "#c0d5d6",
+    "editor.wordHighlightBorder": "#c0d5d6",
 
     // Editor groups and tabs
     "editorGroupHeader.tabsBackground": "#f0eeec",
     "tab.inactiveBackground": "#f0eeec",
-    "tab.inactiveForeground": "#b4afae",
+    "tab.activeBackground": "#f0eeec",
     "tab.border": "#00000000",
+    "tab.inactiveForeground": "#b4afae",
+    "tab.activeBorder": "#484240",
+    "tab.activeForeground": "#484240",
 
     // Activity bar
     "activityBar.background": "#e2e0dd",
