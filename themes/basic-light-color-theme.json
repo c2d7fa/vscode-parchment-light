@@ -21,6 +21,13 @@
     "editor.selectionHighlightBorder": "#c0d5d6",
     "editor.wordHighlightBorder": "#c0d5d6",
 
+    // Lists
+    "list.inactiveSelectionBackground": "#cce1eb",
+
+    // Side bar
+    "sideBar.background": "#f0eeec",
+    "sideBarSectionHeader.background": "#e2e0dd",
+
     // Editor groups and tabs
     "editorGroupHeader.tabsBackground": "#f0eeec",
     "tab.inactiveBackground": "#f0eeec",
@@ -34,6 +41,7 @@
     "activityBar.background": "#e2e0dd",
     "activityBar.inactiveForeground": "#b4afae",
     "activityBar.foreground": "#817b78",
+    "activityBarBadge.background": "#328da8",
 
     // Status bar
     "statusBar.background": "#e2e0dd",
