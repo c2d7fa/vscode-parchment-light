@@ -11,18 +11,16 @@
     "editorRuler.foreground": "#48424018",
 
     // Highlights
-    "editorCursor.foreground": "#328da8",
-    "selection.background": "#cce1eb",
-    "editor.selectionBackground": "#cce1eb",
-    "editor.selectionForeground": "#5b6b72",
-    "editor.selectionHighlightBackground": "#00000000",
-    "editor.wordHighlightBackground": "#00000000",
-    "editor.hoverHighlightBackground": "#c0d5d640",
-    "editor.selectionHighlightBorder": "#c0d5d6",
-    "editor.wordHighlightBorder": "#c0d5d6",
+    "editorCursor.foreground": "#a8323c",
+    "selection.background": "#e7dbcc",
+    "editor.selectionBackground": "#e7dbcc",
+    "editor.selectionForeground": "#645d53",
+    "editor.selectionHighlightBackground": "#e7dbcc80",
+    "editor.wordHighlightBackground": "#e7dbcc80",
+    "editor.hoverHighlightBackground": "#e7dbcc80",
 
     // Lists
-    "list.inactiveSelectionBackground": "#cce1eb",
+    "list.inactiveSelectionBackground": "#e7dbcc80",
 
     // Side bar
     "sideBar.background": "#f0eeec",
@@ -41,7 +39,8 @@
     "activityBar.background": "#e2e0dd",
     "activityBar.inactiveForeground": "#b4afae",
     "activityBar.foreground": "#817b78",
-    "activityBarBadge.background": "#328da8",
+    "activityBarBadge.background": "#d8b2b5",
+    "activityBarBadge.foreground": "#473839",
 
     // Status bar
     "statusBar.background": "#e2e0dd",
@@ -51,7 +50,7 @@
     {
       "scope": "comment",
       "settings": {
-        "foreground": "#627f80",
+        "foreground": "#7c6e8b",
         "fontStyle": "bold"
       }
     },
@@ -88,7 +87,7 @@
     {
       "scope": "string",
       "settings": {
-        "foreground": "#7c8a7c",
+        "foreground": "#807c8a",
         "fontStyle": "italic"
       }
     }
