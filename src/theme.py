@@ -25,7 +25,9 @@ hl2 = "#d8b2b5"
 alt1 = "#7c6e8b" # Comments
 alt2 = "#807c8a" # Strings
 
-red0 = hl1
+red1 = hl1
+blue1 = "#425980" 
+blue2 = "#3273aa"
 
 # See https://code.visualstudio.com/api/references/theme-color.
 
@@ -43,12 +45,21 @@ colors = {
   "widget.shadow": grey7,
   "selection.background": grey7,
   "descriptionForeground": grey4,
-  "errorForeground": red0,
+  "errorForeground": red1,
   "icon.foreground": grey4,
 
   # Window border
   "window.activeBorder": grey10,
   "window.inactiveBorder": grey10,
+
+  # Text colors
+  "textBlockQuote.background": grey10,
+  "textBlockQuote.border": grey8,
+  "textCodeBlock.background": grey10,
+  "textLink.activeForeground": blue2,
+  "textLink.foreground": blue1,
+  "textPreformat.foreground": grey2,
+  "textSeparator.foreground": grey4,
 
   # Highlights
   "editorCursor.foreground": hl1,
