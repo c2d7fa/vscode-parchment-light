@@ -46,6 +46,10 @@ colors = {
   "errorForeground": red0,
   "icon.foreground": grey4,
 
+  # Window border
+  "window.activeBorder": grey10,
+  "window.inactiveBorder": grey10,
+
   # Highlights
   "editorCursor.foreground": hl1,
   "editor.selectionBackground": grey7,
