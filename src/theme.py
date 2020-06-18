@@ -1,3 +1,4 @@
+output = """
 {
   "name": "basic-light",
   "type": "light",
@@ -93,3 +94,6 @@
     }
   ]
 }
+"""
+
+print(output)
