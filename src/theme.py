@@ -21,6 +21,8 @@ grey12 = "#fcf9f6"
 hl0 = "#817b78"
 hl1 = "#a8323c"
 hl2 = "#d8b2b5"
+hl210 = "#e2b0b4"
+hl11 = "#fff0f1"
 
 alt1 = "#7c6e8b" # Comments
 alt2 = "#807c8a" # Strings
@@ -60,6 +62,20 @@ colors = {
   "textLink.foreground": blue1,
   "textPreformat.foreground": grey2,
   "textSeparator.foreground": grey4,
+
+  # Button control
+  "button.background": hl1,
+  "button.foreground": hl11,
+  "button.hoverBackground": hl210,
+  "checkbox.background": grey10,
+  "checkbox.foreground": grey2,
+  "checkbox.border": grey8,
+
+  # Dropdown control
+  "dropdown.background": grey10,
+  "dropdown.listBackground": grey10,
+  "dropdown.border": grey8,
+  "dropdown.foreground": grey1,
 
   # Highlights
   "editorCursor.foreground": hl1,
