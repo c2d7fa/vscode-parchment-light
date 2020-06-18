@@ -25,18 +25,29 @@ hl2 = "#d8b2b5"
 alt1 = "#7c6e8b" # Comments
 alt2 = "#807c8a" # Strings
 
+red0 = hl1
+
+# See https://code.visualstudio.com/api/references/theme-color.
+
 colors = {
   "editor.background": grey12,
   "editor.foreground": grey1,
-  "widget.shadow": grey7,
   "editorLineNumber.foreground": grey6,
   "editorLineNumber.activeForeground": grey5,
   "editorWhitespace.foreground": grey10,
   "editorRuler.foreground": grey10,
 
+  # Base colors
+  "focusBorder": hl2,
+  "foreground": grey1,
+  "widget.shadow": grey7,
+  "selection.background": grey7,
+  "descriptionForeground": grey4,
+  "errorForeground": red0,
+  "icon.foreground": grey4,
+
   # Highlights
   "editorCursor.foreground": hl1,
-  "selection.background": grey9,
   "editor.selectionBackground": grey7,
   "editor.selectionForeground": grey2,
   "editor.selectionHighlightBackground": grey9,
