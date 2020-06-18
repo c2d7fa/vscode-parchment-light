@@ -1,99 +1,121 @@
-output = """
-{
-  "name": "basic-light",
-  "type": "light",
-  "colors": {
-    "editor.background": "#fcf9f6",
-    "editor.foreground": "#484240",
-    "widget.shadow": "#e0ddd9",
-    "editorLineNumber.foreground": "#dad7d6",
-    "editorLineNumber.activeForeground": "#b4afae",
-    "editorWhitespace.foreground": "#48424018",
-    "editorRuler.foreground": "#48424018",
+import json
 
-    // Highlights
-    "editorCursor.foreground": "#a8323c",
-    "selection.background": "#e7dbcc",
-    "editor.selectionBackground": "#e7dbcc",
-    "editor.selectionForeground": "#645d53",
-    "editor.selectionHighlightBackground": "#e7dbcc80",
-    "editor.wordHighlightBackground": "#e7dbcc80",
-    "editor.hoverHighlightBackground": "#e7dbcc80",
+transparent = "#00000000"
 
-    // Lists
-    "list.inactiveSelectionBackground": "#e7dbcc80",
+# Please excuse the somewhat nonsensical naming scheme. I got tired of renaming
+# colors, and we should probably clean these up anyway.
 
-    // Side bar
-    "sideBar.background": "#f0eeec",
-    "sideBarSectionHeader.background": "#e2e0dd",
+grey1 = "#484240"
+grey2 = "#645d53"
+grey4 = "#817b78"
+grey480 = "#a7a4a4"
+grey5 = "#b4afae"
+grey6 = "#dad7d6"
+grey650 = "#e2e0dd"
+grey7 = "#e7dbcc"
+grey8 = "#f0eeec"
+grey9 = "#e7dbcc80"
+grey10 = "#48424018"
+grey12 = "#fcf9f6"
 
-    // Editor groups and tabs
-    "editorGroupHeader.tabsBackground": "#f0eeec",
-    "tab.inactiveBackground": "#f0eeec",
-    "tab.activeBackground": "#f0eeec",
-    "tab.border": "#00000000",
-    "tab.inactiveForeground": "#b4afae",
-    "tab.activeBorder": "#484240",
-    "tab.activeForeground": "#484240",
+hl0 = "#817b78"
+hl1 = "#a8323c"
+hl2 = "#d8b2b5"
 
-    // Activity bar
-    "activityBar.background": "#e2e0dd",
-    "activityBar.inactiveForeground": "#b4afae",
-    "activityBar.foreground": "#817b78",
-    "activityBarBadge.background": "#d8b2b5",
-    "activityBarBadge.foreground": "#473839",
+alt1 = "#7c6e8b" # Comments
+alt2 = "#807c8a" # Strings
 
-    // Status bar
-    "statusBar.background": "#e2e0dd",
-    "statusBar.foreground": "#817b78"
-  },
-  "tokenColors": [
-    {
-      "scope": "comment",
-      "settings": {
-        "foreground": "#7c6e8b",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "scope": "keyword",
-      "settings": {
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "scope": "storage",
-      "settings": {
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "scope": "entity.name.type",
-      "settings": {
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "scope": "punctuation.separator",
-      "settings": {
-        "foreground": "#a7a4a4"
-      }
-    },
-    {
-      "scope": "punctuation.terminator",
-      "settings": {
-        "foreground": "#a7a4a4"
-      }
-    },
-    {
-      "scope": "string",
-      "settings": {
-        "foreground": "#807c8a",
-        "fontStyle": "italic"
-      }
-    }
-  ]
+colors = {
+  "editor.background": grey12,
+  "editor.foreground": grey1,
+  "widget.shadow": grey7,
+  "editorLineNumber.foreground": grey6,
+  "editorLineNumber.activeForeground": grey5,
+  "editorWhitespace.foreground": grey10,
+  "editorRuler.foreground": grey10,
+
+  # Highlights
+  "editorCursor.foreground": hl1,
+  "selection.background": grey9,
+  "editor.selectionBackground": grey7,
+  "editor.selectionForeground": grey2,
+  "editor.selectionHighlightBackground": grey9,
+  "editor.wordHighlightBackground": grey9,
+  "editor.hoverHighlightBackground": grey9,
+
+  # Lists
+  "list.inactiveSelectionBackground": grey9,
+
+  # Side bar
+  "sideBar.background": grey8,
+  "sideBarSectionHeader.background": grey650,
+
+  # Editor groups and tabs
+  "editorGroupHeader.tabsBackground": grey8,
+  "tab.inactiveBackground": grey8,
+  "tab.activeBackground": grey8,
+  "tab.border": transparent,
+  "tab.inactiveForeground": grey5,
+  "tab.activeBorder": grey1,
+  "tab.activeForeground": grey1,
+
+  # Activity bar
+  "activityBar.background": grey650,
+  "activityBar.inactiveForeground": grey5,
+  "activityBar.foreground": grey4,
+  "activityBarBadge.background": hl2,
+  "activityBarBadge.foreground": hl0,
+
+  # Status bar
+  "statusBar.background": grey650,
+  "statusBar.foreground": grey4
 }
-"""
 
-print(output)
+token_colors = [
+  {
+    "scope": "comment",
+    "settings": {
+      "foreground": alt1,
+      "fontStyle": "bold"
+    }
+  },
+  {
+    "scope": "keyword",
+    "settings": {
+      "fontStyle": "bold"
+    }
+  },
+  {
+    "scope": "storage",
+    "settings": {
+      "fontStyle": "bold"
+    }
+  },
+  {
+    "scope": "entity.name.type",
+    "settings": {
+      "fontStyle": "italic"
+    }
+  },
+  {
+    "scope": "punctuation.separator",
+    "settings": {
+      "foreground": grey480
+    }
+  },
+  {
+    "scope": "punctuation.terminator",
+    "settings": {
+      "foreground": grey480
+    }
+  },
+  {
+    "scope": "string",
+    "settings": {
+      "foreground": alt2,
+      "fontStyle": "italic"
+    }
+  }
+]
+
+print(json.dumps({"name": "basic-light", "type": "light", "colors": colors, "tokenColors": token_colors}, indent=2))
