@@ -11,6 +11,7 @@ grey4 = "#817b78"
 grey480 = "#a7a4a4"
 grey5 = "#b4afae"
 grey6 = "#dad7d6"
+grey6b = "#e4dad1"
 grey650 = "#e2e0dd"
 grey7 = "#e7dbcc"
 grey8 = "#f0eeec"
@@ -86,7 +87,17 @@ colors = {
   "editor.hoverHighlightBackground": grey9,
 
   # Lists
+  "list.activeSelectionBackground": grey6b,
+  "list.activeSelectionForeground": grey1,
+  "list.dropBackground": grey8,
+  "list.focusBackground": grey6b,
+  "list.focusForeground": grey1,
+  "list.highlightForeground": hl1,
+  "list.hoverBackground": grey9,
+  "list.hoverForeground": grey1,
   "list.inactiveSelectionBackground": grey9,
+  "list.inactiveSelectionForeground": grey1,
+  "list.inactiveFocusBackground": grey9,
 
   # Side bar
   "sideBar.background": grey8,
