@@ -17,6 +17,7 @@ grey7 = "#e7dbcc"
 grey8 = "#f0eeec"
 grey9 = "#e7dbcc80"
 grey10 = "#48424018"
+grey11 = "#f7f3f0"
 grey12 = "#fcf9f6"
 
 hl0 = "#817b78"
@@ -98,6 +99,13 @@ colors = {
   "list.inactiveSelectionBackground": grey9,
   "list.inactiveSelectionForeground": grey1,
   "list.inactiveFocusBackground": grey9,
+
+  # Editor widget
+  "editorWidget.foreground": grey2,
+  "editorWidget.background": grey11,
+  "editorWidget.border": transparent,
+  "editorSuggestWidget.highlightForeground": hl1,
+  "editorSuggestWidget.selectedBackground": grey6b,
 
   # Side bar
   "sideBar.background": grey8,
