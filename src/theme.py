@@ -4,24 +4,31 @@ from hsluv import hsluv_to_hex
 def hsl(h, s, l):
   return hsluv_to_hex([h, s, l])
 
+def sl(s, l):
+  return hsl(45, s, l)
+
 transparent = "#00000000"
+
+trans2 = sl(50, 20) + "10"
+trans3 = sl(50, 20) + "20"
+trans4 = sl(50, 20) + "38"
 
 # Please excuse the somewhat nonsensical naming scheme. I got tired of renaming
 # colors, and we should probably clean these up anyway.
 
-grey1 = hsl(45, 6, 30)
-grey2 = hsl(45, 20, 40)
-grey4 = hsl(45, 6, 50)
-grey480 = hsl(45, 6, 65)
-grey5 = hsl(45, 6, 70)
-grey6 = hsl(45, 6, 85)
-grey6b = hsl(45, 20, 85)
-grey650 = hsl(45, 6, 87)
-grey7 = hsl(45, 30, 90)
-grey9 = hsl(45, 10, 95)
-grey10 = hsl(45, 20, 96)
-grey11 = hsl(45, 30, 96)
-grey12 = hsl(45, 45, 98)
+grey1 = sl(6, 30)
+grey2 = sl(20, 40)
+grey4 = sl(6, 50)
+grey480 = sl(6, 65)
+grey5 = sl(6, 70)
+grey6 = sl(6, 85)
+grey6b = sl(20, 85)
+grey650 = sl(6, 87)
+grey7 = sl(30, 90)
+grey9 = sl(10, 95)
+grey10 = sl(20, 96)
+grey11 = sl(30, 96)
+grey12 = sl(45, 98)
 
 hl0 = hsl(10, 6, 50)
 hl1 = hsl(10, 70, 40)
@@ -31,6 +38,7 @@ hl11 = hsl(10, 70, 95)
 
 alt1 = hsl(285, 15, 45) # Comments
 alt2 = hsl(250, 8, 50) # Strings
+alt3 = hsl(160, 30, 80) # Highlight background
 
 red1 = hl1
 blue1 = hsl(250, 50, 35)
@@ -132,7 +140,16 @@ colors = {
 
   # Status bar
   "statusBar.background": grey650,
-  "statusBar.foreground": grey4
+  "statusBar.foreground": grey4,
+
+  # Minimap
+  "minimap.findMatchHighlight": alt3,
+  "minimap.selectionHighlight": grey7,
+  "minimap.errorHighlight": red1,
+  "minimap.warningHighlight": red1,
+  "minimapSlider.background": trans2,
+  "minimapSlider.hoverBackground": trans3,
+  "minimapSlider.activeBackground": trans4,
 }
 
 token_colors = [
