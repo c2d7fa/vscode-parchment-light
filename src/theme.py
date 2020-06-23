@@ -9,33 +9,32 @@ transparent = "#00000000"
 # Please excuse the somewhat nonsensical naming scheme. I got tired of renaming
 # colors, and we should probably clean these up anyway.
 
-grey1 = hsl(32.0, 8.1, 28.5)
-grey2 = hsl(60.3, 19.9, 39.9)
-grey4 = hsl(39.9, 6.1, 52.1)
-grey480 = hsl(12.2, 1.8, 67.6)
-grey5 = hsl(25.5, 3.6, 71.8)
-grey6 = hsl(33.0, 5.3, 86.2)
-grey6b = hsl(52.0, 20.9, 87.6)
-grey650 = hsl(63.0, 4.9, 89.3)
-grey7 = hsl(58.3, 26.5, 88.0)
-grey8 = hsl(55.2, 9.6, 94.2)
-grey9 = "#e7dbcc80"
-grey10 = "#48424018"
-grey11 = hsl(48.9, 28.6, 96.1)
-grey12 = hsl(55.1, 45.6, 98.1)
+grey1 = hsl(45, 6, 30)
+grey2 = hsl(45, 20, 40)
+grey4 = hsl(45, 6, 50)
+grey480 = hsl(45, 6, 65)
+grey5 = hsl(45, 6, 70)
+grey6 = hsl(45, 6, 85)
+grey6b = hsl(45, 20, 85)
+grey650 = hsl(45, 6, 87)
+grey7 = hsl(45, 30, 90)
+grey9 = hsl(45, 10, 95)
+grey10 = hsl(45, 20, 96)
+grey11 = hsl(45, 30, 96)
+grey12 = hsl(45, 45, 98)
 
-hl0 = hsl(39.9, 6.1, 52.1)
-hl1 = hsl(9.4, 69.1, 39.5)
-hl2 = hsl(6.9, 37.2, 75.9)
-hl210 = hsl(7.0, 51.2, 76.4)
-hl11 = hsl(7.3, 100.0, 96.0)
+hl0 = hsl(10, 6, 50)
+hl1 = hsl(10, 70, 40)
+hl150 = hsl(10, 70, 50)
+hl2 = hsl(10, 40, 75)
+hl11 = hsl(10, 70, 95)
 
-alt1 = hsl(285.1, 16.8, 48.6) # Comments
-alt2 = hsl(227.4, 8.9, 52.8) # Strings
+alt1 = hsl(285, 15, 45) # Comments
+alt2 = hsl(250, 8, 50) # Strings
 
 red1 = hl1
-blue1 = hsl(251.5, 53.1, 37.6)
-blue2 = hsl(245.0, 83.6, 46.8)
+blue1 = hsl(250, 50, 35)
+blue2 = hsl(250, 80, 45)
 
 # See https://code.visualstudio.com/api/references/theme-color.
 
@@ -62,7 +61,7 @@ colors = {
 
   # Text colors
   "textBlockQuote.background": grey10,
-  "textBlockQuote.border": grey8,
+  "textBlockQuote.border": grey9,
   "textCodeBlock.background": grey10,
   "textLink.activeForeground": blue2,
   "textLink.foreground": blue1,
@@ -72,15 +71,15 @@ colors = {
   # Button control
   "button.background": hl1,
   "button.foreground": hl11,
-  "button.hoverBackground": hl210,
+  "button.hoverBackground": hl150,
   "checkbox.background": grey10,
   "checkbox.foreground": grey2,
-  "checkbox.border": grey8,
+  "checkbox.border": grey9,
 
   # Dropdown control
   "dropdown.background": grey10,
   "dropdown.listBackground": grey10,
-  "dropdown.border": grey8,
+  "dropdown.border": grey9,
   "dropdown.foreground": grey1,
 
   # Highlights
@@ -94,7 +93,7 @@ colors = {
   # Lists
   "list.activeSelectionBackground": grey6b,
   "list.activeSelectionForeground": grey1,
-  "list.dropBackground": grey8,
+  "list.dropBackground": grey9,
   "list.focusBackground": grey6b,
   "list.focusForeground": grey1,
   "list.highlightForeground": hl1,
@@ -112,13 +111,13 @@ colors = {
   "editorSuggestWidget.selectedBackground": grey6b,
 
   # Side bar
-  "sideBar.background": grey8,
+  "sideBar.background": grey9,
   "sideBarSectionHeader.background": grey650,
 
   # Editor groups and tabs
-  "editorGroupHeader.tabsBackground": grey8,
-  "tab.inactiveBackground": grey8,
-  "tab.activeBackground": grey8,
+  "editorGroupHeader.tabsBackground": grey9,
+  "tab.inactiveBackground": grey9,
+  "tab.activeBackground": grey9,
   "tab.border": transparent,
   "tab.inactiveForeground": grey5,
   "tab.activeBorder": grey1,
