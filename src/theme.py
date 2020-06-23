@@ -1,37 +1,41 @@
 import json
+from hsluv import hsluv_to_hex
+
+def hsl(h, s, l):
+  return hsluv_to_hex([h, s, l])
 
 transparent = "#00000000"
 
 # Please excuse the somewhat nonsensical naming scheme. I got tired of renaming
 # colors, and we should probably clean these up anyway.
 
-grey1 = "#484240"
-grey2 = "#645d53"
-grey4 = "#817b78"
-grey480 = "#a7a4a4"
-grey5 = "#b4afae"
-grey6 = "#dad7d6"
-grey6b = "#e4dad1"
-grey650 = "#e2e0dd"
-grey7 = "#e7dbcc"
-grey8 = "#f0eeec"
+grey1 = hsl(32.0, 8.1, 28.5)
+grey2 = hsl(60.3, 19.9, 39.9)
+grey4 = hsl(39.9, 6.1, 52.1)
+grey480 = hsl(12.2, 1.8, 67.6)
+grey5 = hsl(25.5, 3.6, 71.8)
+grey6 = hsl(33.0, 5.3, 86.2)
+grey6b = hsl(52.0, 20.9, 87.6)
+grey650 = hsl(63.0, 4.9, 89.3)
+grey7 = hsl(58.3, 26.5, 88.0)
+grey8 = hsl(55.2, 9.6, 94.2)
 grey9 = "#e7dbcc80"
 grey10 = "#48424018"
-grey11 = "#f7f3f0"
-grey12 = "#fcf9f6"
+grey11 = hsl(48.9, 28.6, 96.1)
+grey12 = hsl(55.1, 45.6, 98.1)
 
-hl0 = "#817b78"
-hl1 = "#a8323c"
-hl2 = "#d8b2b5"
-hl210 = "#e2b0b4"
-hl11 = "#fff0f1"
+hl0 = hsl(39.9, 6.1, 52.1)
+hl1 = hsl(9.4, 69.1, 39.5)
+hl2 = hsl(6.9, 37.2, 75.9)
+hl210 = hsl(7.0, 51.2, 76.4)
+hl11 = hsl(7.3, 100.0, 96.0)
 
-alt1 = "#7c6e8b" # Comments
-alt2 = "#807c8a" # Strings
+alt1 = hsl(285.1, 16.8, 48.6) # Comments
+alt2 = hsl(227.4, 8.9, 52.8) # Strings
 
 red1 = hl1
-blue1 = "#425980" 
-blue2 = "#3273aa"
+blue1 = hsl(251.5, 53.1, 37.6)
+blue2 = hsl(245.0, 83.6, 46.8)
 
 # See https://code.visualstudio.com/api/references/theme-color.
 
