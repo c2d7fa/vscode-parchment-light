@@ -23,19 +23,20 @@ hl2 = hsl(10, 40, 75)
 hl11 = hsl(10, 70, 95)
 
 alt1 = hsl(285, 15, 45) # Comments
-alt2 = hsl(250, 8, 50) # Strings
 alt3 = hsl(160, 30, 80) # Highlight background
 
 red1 = hl1
 blue1 = hsl(250, 50, 35)
 blue2 = hsl(250, 80, 45)
 purple1 = hsl(285, 50, 40)
-green1 = hsl(135, 50, 40)
+green1 = hsl(90, 50, 40)
 pink1 = hsl(350, 50, 40)
 
 purple2 = hsl(285, 50, 70)
 blue3 = hsl(250, 50, 70)
 pink2 = hsl(350, 50, 70)
+
+cyan0 = hsl(200, 25, 40)
 
 # See https://code.visualstudio.com/api/references/theme-color.
 
@@ -206,7 +207,7 @@ token_colors = [
   {
     "scope": "string",
     "settings": {
-      "foreground": alt2,
+      "foreground": cyan0,
       "fontStyle": "italic"
     }
   }
