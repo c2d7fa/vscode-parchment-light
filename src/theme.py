@@ -33,12 +33,14 @@ blue2 = hsl(250, 80, 45)
 # See https://code.visualstudio.com/api/references/theme-color.
 
 colors = {
+  # Editor colors
   "editor.background": brown(98),
   "editor.foreground": brown(20),
   "editorLineNumber.foreground": brown(80),
   "editorLineNumber.activeForeground": brown(50),
   "editorWhitespace.foreground": brown(90),
   "editorRuler.foreground": brown(90),
+  "editorLink.activeForeground": blue2,
 
   # Base colors
   "focusBorder": hl2,
