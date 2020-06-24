@@ -7,28 +7,14 @@ def hsl(h, s, l):
 def sl(s, l):
   return hsl(45, s, l)
 
+def brown(l):
+  return sl(20, l)
+
 transparent = "#00000000"
 
 trans2 = sl(50, 20) + "10"
 trans3 = sl(50, 20) + "20"
 trans4 = sl(50, 20) + "38"
-
-# Please excuse the somewhat nonsensical naming scheme. I got tired of renaming
-# colors, and we should probably clean these up anyway.
-
-grey1 = sl(6, 30)
-grey2 = sl(20, 40)
-grey4 = sl(6, 50)
-grey480 = sl(6, 65)
-grey5 = sl(6, 70)
-grey6 = sl(6, 85)
-grey6b = sl(20, 85)
-grey650 = sl(6, 87)
-grey7 = sl(30, 90)
-grey9 = sl(10, 95)
-grey10 = sl(20, 96)
-grey11 = sl(30, 96)
-grey12 = sl(45, 98)
 
 hl0 = hsl(10, 6, 50)
 hl1 = hsl(10, 70, 40)
@@ -47,104 +33,105 @@ blue2 = hsl(250, 80, 45)
 # See https://code.visualstudio.com/api/references/theme-color.
 
 colors = {
-  "editor.background": grey12,
-  "editor.foreground": grey1,
-  "editorLineNumber.foreground": grey6,
-  "editorLineNumber.activeForeground": grey5,
-  "editorWhitespace.foreground": grey10,
-  "editorRuler.foreground": grey10,
+  "editor.background": brown(98),
+  "editor.foreground": brown(20),
+  "editorLineNumber.foreground": brown(80),
+  "editorLineNumber.activeForeground": brown(50),
+  "editorWhitespace.foreground": brown(90),
+  "editorRuler.foreground": brown(90),
 
   # Base colors
   "focusBorder": hl2,
-  "foreground": grey1,
-  "widget.shadow": grey7,
-  "selection.background": grey7,
-  "descriptionForeground": grey4,
+  "foreground": brown(20),
+  "widget.shadow": trans2,
+  "selection.background": brown(70),
+  "descriptionForeground": brown(40),
   "errorForeground": red1,
-  "icon.foreground": grey4,
+  "icon.foreground": brown(40),
 
   # Window border
-  "window.activeBorder": grey10,
-  "window.inactiveBorder": grey10,
+  "window.activeBorder": brown(90),
+  "window.inactiveBorder": brown(90),
 
   # Text colors
-  "textBlockQuote.background": grey10,
-  "textBlockQuote.border": grey9,
-  "textCodeBlock.background": grey10,
+  "textBlockQuote.background": brown(90),
+  "textBlockQuote.border": brown(70),
+  "textCodeBlock.background": brown(90),
   "textLink.activeForeground": blue2,
   "textLink.foreground": blue1,
-  "textPreformat.foreground": grey2,
-  "textSeparator.foreground": grey4,
+  "textPreformat.foreground": brown(30),
+  "textSeparator.foreground": brown(80),
 
   # Button control
   "button.background": hl1,
   "button.foreground": hl11,
   "button.hoverBackground": hl150,
-  "checkbox.background": grey10,
-  "checkbox.foreground": grey2,
-  "checkbox.border": grey9,
+  "checkbox.background": brown(95),
+  "checkbox.foreground": brown(40),
+  "checkbox.border": brown(95),
 
   # Dropdown control
-  "dropdown.background": grey10,
-  "dropdown.listBackground": grey10,
-  "dropdown.border": grey9,
-  "dropdown.foreground": grey1,
+  "dropdown.background": brown(95),
+  "dropdown.listBackground": brown(95),
+  "dropdown.border": brown(95),
+  "dropdown.foreground": brown(30),
 
   # Highlights
   "editorCursor.foreground": hl1,
-  "editor.selectionBackground": grey7,
-  "editor.selectionForeground": grey2,
-  "editor.selectionHighlightBackground": grey9,
-  "editor.wordHighlightBackground": grey9,
-  "editor.hoverHighlightBackground": grey9,
+  "editor.selectionBackground": brown(90),
+  "editor.selectionForeground": brown(40),
+  "editor.selectionHighlightBackground": brown(90),
+  "editor.wordHighlightBackground": brown(90),
+  "editor.hoverHighlightBackground": brown(90),
 
   # Lists
-  "list.activeSelectionBackground": grey6b,
-  "list.activeSelectionForeground": grey1,
-  "list.dropBackground": grey9,
-  "list.focusBackground": grey6b,
-  "list.focusForeground": grey1,
+  "list.activeSelectionBackground": brown(90),
+  "list.activeSelectionForeground": brown(30),
+  "list.dropBackground": brown(95),
+  "list.focusBackground": brown(90),
+  "list.focusForeground": brown(30),
   "list.highlightForeground": hl1,
-  "list.hoverBackground": grey9,
-  "list.hoverForeground": grey1,
-  "list.inactiveSelectionBackground": grey9,
-  "list.inactiveSelectionForeground": grey1,
-  "list.inactiveFocusBackground": grey9,
+  "list.hoverBackground": brown(95),
+  "list.hoverForeground": brown(30),
+  "list.inactiveSelectionBackground": brown(95),
+  "list.inactiveSelectionForeground": brown(30),
+  "list.inactiveFocusBackground": brown(95),
 
   # Editor widget
-  "editorWidget.foreground": grey2,
-  "editorWidget.background": grey11,
+  "editorWidget.foreground": brown(40),
+  "editorWidget.background": brown(98),
   "editorWidget.border": transparent,
   "editorSuggestWidget.highlightForeground": hl1,
-  "editorSuggestWidget.selectedBackground": grey6b,
+  "editorSuggestWidget.selectedBackground": brown(85),
 
   # Side bar
-  "sideBar.background": grey9,
-  "sideBarSectionHeader.background": grey650,
+  "sideBar.background": brown(95),
+  "sideBarSectionHeader.foreground": brown(50),
+  "sideBarSectionHeader.background": brown(90),
 
   # Editor groups and tabs
-  "editorGroupHeader.tabsBackground": grey9,
-  "tab.inactiveBackground": grey9,
-  "tab.activeBackground": grey9,
+  "editorGroupHeader.tabsBackground": brown(95),
+  "tab.inactiveBackground": brown(95),
+  "tab.activeBackground": brown(95),
   "tab.border": transparent,
-  "tab.inactiveForeground": grey5,
-  "tab.activeBorder": grey1,
-  "tab.activeForeground": grey1,
+  "tab.inactiveForeground": brown(70),
+  "tab.activeBorder": brown(30),
+  "tab.activeForeground": brown(30),
 
   # Activity bar
-  "activityBar.background": grey650,
-  "activityBar.inactiveForeground": grey5,
-  "activityBar.foreground": grey4,
+  "activityBar.background": brown(90),
+  "activityBar.inactiveForeground": brown(70),
+  "activityBar.foreground": brown(50),
   "activityBarBadge.background": hl2,
   "activityBarBadge.foreground": hl0,
 
   # Status bar
-  "statusBar.background": grey650,
-  "statusBar.foreground": grey4,
+  "statusBar.background": brown(90),
+  "statusBar.foreground": brown(50),
 
   # Minimap
   "minimap.findMatchHighlight": alt3,
-  "minimap.selectionHighlight": grey7,
+  "minimap.selectionHighlight": brown(90),
   "minimap.errorHighlight": red1,
   "minimap.warningHighlight": red1,
   "minimapSlider.background": trans2,
@@ -181,13 +168,13 @@ token_colors = [
   {
     "scope": "punctuation.separator",
     "settings": {
-      "foreground": grey480
+      "foreground": brown(65)
     }
   },
   {
     "scope": "punctuation.terminator",
     "settings": {
-      "foreground": grey480
+      "foreground": brown(65)
     }
   },
   {
