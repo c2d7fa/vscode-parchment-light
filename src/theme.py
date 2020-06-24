@@ -29,6 +29,13 @@ alt3 = hsl(160, 30, 80) # Highlight background
 red1 = hl1
 blue1 = hsl(250, 50, 35)
 blue2 = hsl(250, 80, 45)
+purple1 = hsl(285, 50, 40)
+green1 = hsl(135, 50, 40)
+pink1 = hsl(350, 50, 40)
+
+purple2 = hsl(285, 50, 70)
+blue3 = hsl(250, 50, 70)
+pink2 = hsl(350, 50, 70)
 
 # See https://code.visualstudio.com/api/references/theme-color.
 
@@ -38,9 +45,13 @@ colors = {
   "editor.foreground": brown(20),
   "editorLineNumber.foreground": brown(80),
   "editorLineNumber.activeForeground": brown(50),
-  "editorWhitespace.foreground": brown(90),
+  "editorWhitespace.foreground": brown(90), # modified
   "editorRuler.foreground": brown(90),
   "editorLink.activeForeground": blue2,
+
+  "editorGutter.modifiedBackground": purple2,
+  "editorGutter.addedBackground": pink2,
+  "editorGutter.deletedBackground": blue3,
 
   # Base colors
   "focusBorder": hl2,
@@ -139,6 +150,19 @@ colors = {
   "minimapSlider.background": trans2,
   "minimapSlider.hoverBackground": trans3,
   "minimapSlider.activeBackground": trans4,
+
+  "minimapGutter.modifiedBackground": purple2,
+  "minimapGutter.addedBackground": pink2,
+  "minimapGutter.deletedBackground": blue3,
+
+  # Git colors
+  "gitDecoration.addedResourceForeground": pink1,
+  "gitDecoration.modifiedResourceForeground": purple1,
+  "gitDecoration.deletedResourceForeground": blue1,
+  "gitDecoration.untrackedResourceForeground": brown(50),
+  "gitDecoration.ignoredResourceForeground": brown(70),
+  "gitDecoration.conflictingResourceForeground": red1,
+  "gitDecoration.submoduleResourceForeground": green1,
 }
 
 token_colors = [
