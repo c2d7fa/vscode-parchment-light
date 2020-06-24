@@ -164,6 +164,9 @@ colors = {
   "gitDecoration.ignoredResourceForeground": brown(70),
   "gitDecoration.conflictingResourceForeground": red1,
   "gitDecoration.submoduleResourceForeground": green1,
+
+  # Settings editor colors
+  "settings.modifiedItemIndicator": purple2,
 }
 
 token_colors = [
