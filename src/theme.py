@@ -167,6 +167,10 @@ colors = {
 
   # Settings editor colors
   "settings.modifiedItemIndicator": purple2,
+
+  # Quick picker
+  "pickerGroup.border": brown(80),
+  "pickerGroup.foreground": brown(60),
 }
 
 token_colors = [

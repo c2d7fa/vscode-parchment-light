@@ -2,7 +2,7 @@
   "name": "basic-light",
   "displayName": "basic-light",
   "description": "Almost monochromatic, light color theme with highlighted comments",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "engines": {
     "vscode": "^1.45.0"
   },
