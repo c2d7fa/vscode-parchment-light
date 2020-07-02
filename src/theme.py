@@ -171,6 +171,29 @@ colors = {
   # Quick picker
   "pickerGroup.border": brown(80),
   "pickerGroup.foreground": brown(60),
+
+  # Integrated Terminal colors
+  "terminal.background": brown(95),
+  "terminal.foreground": brown(25),
+  "terminal.ansiBrightBlack": brown(85),
+  "terminal.ansiBlack": brown(75),
+  "terminal.ansiBrightBlue": hsl(250, 55, 50),
+  "terminal.ansiBlue": hsl(250, 55, 40),
+  "terminal.ansiBrightCyan": hsl(200, 55, 50),
+  "terminal.ansiCyan": hsl(200, 55, 40),
+  "terminal.ansiBrightGreen": hsl(110, 55, 50),
+  "terminal.ansiGreen": hsl(110, 55, 40),
+  "terminal.ansiBrightMagenta": hsl(285, 55, 50),
+  "terminal.ansiMagenta": hsl(285, 55, 40),
+  "terminal.ansiBrightRed": hsl(10, 55, 50),
+  "terminal.ansiRed": hsl(10, 55, 40),
+  "terminal.ansiBrightWhite": brown(20),
+  "terminal.ansiWhite": brown(25),
+  "terminal.ansiBrightYellow": hsl(60, 55, 50),
+  "terminal.ansiYellow": hsl(60, 55, 40),
+  "terminal.selectionBackground": brown(70),
+  "terminalCursor.background": brown(90),
+  "terminalCursor.foreground": hl1,
 }
 
 token_colors = [
