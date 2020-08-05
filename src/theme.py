@@ -126,16 +126,21 @@ colors = {
   # Editor groups and tabs
   "editorGroupHeader.tabsBackground": brown(95),
   "tab.inactiveBackground": brown(95),
-  "tab.activeBackground": brown(95),
   "tab.border": transparent,
   "tab.inactiveForeground": brown(70),
-  "tab.activeBorder": brown(30),
+  "tab.activeBackground": brown(93),
+  "tab.activeBorderTop": brown(30),
   "tab.activeForeground": brown(30),
 
+  # Breadcrumbs colors
+  "breadcrumb.foreground": brown(70),
+  "breadcrumb.background": brown(93),
+  "breadcrumb.focusForeground": brown(50),
+
   # Title bar colors
-  "titleBar.activeBackground": brown(90),
+  "titleBar.activeBackground": brown(85),
   "titleBar.activeForeground": brown(50),
-  "titleBar.inactiveBackground": brown(90),
+  "titleBar.inactiveBackground": brown(85),
   "titleBar.inactiveForeground": brown(70),
 
   # Activity bar
