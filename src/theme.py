@@ -243,4 +243,4 @@ token_colors = [
   }
 ]
 
-print(json.dumps({"name": "basic-light", "type": "light", "colors": colors, "tokenColors": token_colors}, indent=2))
+print(json.dumps({"type": "light", "colors": colors, "tokenColors": token_colors}, indent=2))

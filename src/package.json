@@ -1,8 +1,8 @@
 {
-  "name": "basic-light",
-  "displayName": "basic-light",
+  "name": "parchment-light",
+  "displayName": "Parchment Light Theme",
   "description": "Almost monochromatic, light color theme with highlighted comments",
-  "version": "0.3.6",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.45.0"
   },
@@ -12,9 +12,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Basic Light",
+        "label": "Parchment Light",
         "uiTheme": "vs",
-        "path": "./themes/basic-light-color-theme.json"
+        "path": "./themes/parchment-light-color-theme.json"
       }
     ]
   }
