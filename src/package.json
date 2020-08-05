@@ -2,7 +2,7 @@
   "name": "parchment-light",
   "displayName": "Parchment Light Theme",
   "description": "Almost monochromatic, light color theme with highlighted comments",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "engines": {
     "vscode": "^1.45.0"
   },

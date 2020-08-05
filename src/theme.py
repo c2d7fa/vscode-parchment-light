@@ -132,6 +132,12 @@ colors = {
   "tab.activeBorder": brown(30),
   "tab.activeForeground": brown(30),
 
+  # Title bar colors
+  "titleBar.activeBackground": brown(90),
+  "titleBar.activeForeground": brown(50),
+  "titleBar.inactiveBackground": brown(90),
+  "titleBar.inactiveForeground": brown(70),
+
   # Activity bar
   "activityBar.background": brown(90),
   "activityBar.inactiveForeground": brown(70),
