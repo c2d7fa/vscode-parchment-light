@@ -122,14 +122,18 @@ colors = {
   "sideBar.background": brown(95),
   "sideBarSectionHeader.foreground": brown(50),
   "sideBarSectionHeader.background": brown(90),
+  "sideBar.border": brown(90),
 
   # Editor groups and tabs
+  "editorGroup.border": brown(90),
   "editorGroupHeader.tabsBackground": brown(95),
+  "editorGroupHeader.border": brown(85),
+  "editorGroupHeader.tabsBorder": brown(85),
   "tab.inactiveBackground": brown(95),
   "tab.border": transparent,
   "tab.inactiveForeground": brown(70),
   "tab.activeBackground": brown(93),
-  "tab.activeBorderTop": brown(30),
+  "tab.activeBorder": brown(30),
   "tab.activeForeground": brown(30),
 
   # Breadcrumbs colors
@@ -142,17 +146,20 @@ colors = {
   "titleBar.activeForeground": brown(50),
   "titleBar.inactiveBackground": brown(85),
   "titleBar.inactiveForeground": brown(70),
+  "titleBar.border": brown(80),
 
   # Activity bar
   "activityBar.background": brown(90),
   "activityBar.inactiveForeground": brown(70),
   "activityBar.foreground": brown(50),
+  "activityBar.border": brown(80),
   "activityBarBadge.background": hl2,
   "activityBarBadge.foreground": hl0,
 
   # Status bar
   "statusBar.background": brown(90),
   "statusBar.foreground": brown(50),
+  "statusBar.border": brown(80),
 
   # Minimap
   "minimap.findMatchHighlight": alt3,
