@@ -36,7 +36,7 @@ purple2 = hsl(285, 50, 70)
 blue3 = hsl(250, 50, 70)
 pink2 = hsl(350, 50, 70)
 
-cyan0 = hsl(200, 25, 40)
+cyan0 = hsl(200, 35, 40)
 
 # See https://code.visualstudio.com/api/references/theme-color.
 
@@ -239,6 +239,32 @@ token_colors = [
     "settings": {
       "foreground": cyan0,
       "fontStyle": "italic"
+    }
+  },
+  {
+    "scope": "markup.heading",
+    "settings": {
+      "fontStyle": "bold"
+    }
+  },
+  {
+    # Inline code, e.g. in Markdown.
+    "scope": "markup.inline",
+    "settings": {
+      "foreground": cyan0,
+      "fontStyle": "italic"
+    }
+  },
+  {
+    "scope": "markup.italic",
+    "settings": {
+      "fontStyle": "italic"
+    }
+  },
+  {
+    "scope": "markup.bold",
+    "settings": {
+      "fontStyle": "bold"
     }
   }
 ]
