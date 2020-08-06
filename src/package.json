@@ -1,9 +1,10 @@
 {
   "name": "parchment-light",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "displayName": "Parchment Light Theme",
   "description": "Almost monochromatic, light color theme with highlighted comments",
   "publisher": "johv",
+  "icon": "icon.png",
   "keywords": [
     "color-theme",
     "theme",
