@@ -37,6 +37,8 @@ blue3 = hsl(250, 50, 70)
 pink2 = hsl(350, 50, 70)
 
 cyan0 = hsl(200, 35, 40)
+cyan3 = hsl(200, 10, 75)
+cyan4 = hsl(200, 10, 80)
 
 foreground = brown(20)
 
@@ -162,6 +164,13 @@ colors = {
   "statusBar.background": brown(90),
   "statusBar.foreground": brown(50),
   "statusBar.border": brown(80),
+  "statusBar.noFolderBackground": brown(90),
+  "statusBar.noFolderForeground": brown(50),
+  "statusBar.noFolderBorder": brown(80),
+  "statusBar.debuggingBackground": cyan4,
+  "statusBar.debuggingForeground": cyan0,
+  "statusBar.debuggingBorder": cyan3,
+  "statusBarItem.hoverBackground": brown(85),
 
   # Minimap
   "minimap.findMatchHighlight": alt3,
