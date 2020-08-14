@@ -260,6 +260,13 @@ token_colors = [
     }
   },
   {
+    "scope": "punctuation",
+    "settings": {
+      "foreground": brown(75),
+      "fontStyle": "bold"
+    }
+  },
+  {
     "scope": "markup.heading",
     "settings": {
       "fontStyle": "bold"
