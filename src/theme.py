@@ -38,12 +38,14 @@ pink2 = hsl(350, 50, 70)
 
 cyan0 = hsl(200, 35, 40)
 
+foreground = brown(20)
+
 # See https://code.visualstudio.com/api/references/theme-color.
 
 colors = {
   # Editor colors
   "editor.background": brown(98),
-  "editor.foreground": brown(20),
+  "editor.foreground": foreground,
   "editorLineNumber.foreground": brown(80),
   "editorLineNumber.activeForeground": brown(50),
   "editorWhitespace.foreground": brown(90), # modified
@@ -56,7 +58,7 @@ colors = {
 
   # Base colors
   "focusBorder": hl2,
-  "foreground": brown(20),
+  "foreground": foreground,
   "widget.shadow": trans2,
   "selection.background": brown(70),
   "descriptionForeground": brown(40),
@@ -205,7 +207,7 @@ colors = {
   "terminal.ansiMagenta": hsl(285, 55, 40),
   "terminal.ansiBrightRed": hsl(10, 55, 50),
   "terminal.ansiRed": hsl(10, 55, 40),
-  "terminal.ansiBrightWhite": brown(20),
+  "terminal.ansiBrightWhite": foreground,
   "terminal.ansiWhite": brown(25),
   "terminal.ansiBrightYellow": hsl(60, 55, 50),
   "terminal.ansiYellow": hsl(60, 55, 40),
@@ -263,6 +265,78 @@ token_colors = [
     "scope": "punctuation",
     "settings": {
       "foreground": brown(75),
+      "fontStyle": "bold"
+    }
+  },
+
+  # JSON and YAML
+  {
+    "scope": "string.unquoted.plain.out.yaml",
+    "settings": {
+      "foreground": brown(50),
+      "fontStyle": "normal"
+    }
+  },
+  {
+    "scope": "string.quoted.double.yaml",
+    "settings": {
+      "foreground": brown(50),
+      "fontStyle": "normal"
+    }
+  },
+  {
+    "scope": "string.quoted.double.json",
+    "settings": {
+      "foreground": brown(50),
+      "fontStyle": "normal"
+    }
+  },
+  {
+    "scope": "constant.numeric.json",
+    "settings": {
+      "foreground": brown(50),
+      "fontStyle": "bold"
+    }
+  },
+  {
+    "scope": "constant.numeric.integer.yaml",
+    "settings": {
+      "foreground": brown(50),
+      "fontStyle": "bold"
+    }
+  },
+  {
+    "scope": "constant.numeric.float.yaml",
+    "settings": {
+      "foreground": brown(50),
+      "fontStyle": "bold"
+    }
+  },
+  {
+    "scope": "constant.language.json",
+    "settings": {
+      "foreground": brown(50),
+      "fontStyle": "bold"
+    }
+  },
+  {
+    "scope": "constant.language.boolean.yaml",
+    "settings": {
+      "foreground": brown(50),
+      "fontStyle": "bold"
+    }
+  },
+  {
+    "scope": "support.type.property-name.json",
+    "settings": {
+      "foreground": brown(40),
+      "fontStyle": "bold"
+    }
+  },
+  {
+    "scope": "entity.name.tag.yaml",
+    "settings": {
+      "foreground": brown(40),
       "fontStyle": "bold"
     }
   },
