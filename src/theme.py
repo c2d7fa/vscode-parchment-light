@@ -266,6 +266,8 @@ token_colors = [
       "fontStyle": "bold"
     }
   },
+
+  # Markup (e.g. Markdown)
   {
     "scope": "markup.heading",
     "settings": {
@@ -273,11 +275,10 @@ token_colors = [
     }
   },
   {
-    # Inline code, e.g. in Markdown.
+    # Inline code
     "scope": "markup.inline",
     "settings": {
-      "foreground": cyan0,
-      "fontStyle": "italic"
+      "foreground": cyan0
     }
   },
   {
@@ -290,6 +291,31 @@ token_colors = [
     "scope": "markup.bold",
     "settings": {
       "fontStyle": "bold"
+    }
+  },
+  {
+    "scope": "markup.quote",
+    "settings": {
+      "foreground": cyan0,
+      "fontStyle": "italic"
+    }
+  },
+  {
+    "scope": "markup.raw.block",
+    "settings": {
+      "foreground": cyan0
+    }
+  },
+  {
+    "scope": "markup.fenced_code",
+    "settings": {
+      "foreground": cyan0
+    }
+  },
+  {
+    "scope": "fenced_code.block.language",
+    "settings": {
+      "foreground": brown(60)
     }
   }
 ]
