@@ -278,6 +278,15 @@ token_colors = [
     }
   },
 
+  {
+    # E.g. parentheses in TypeScript; like punctuation
+    "scope": "meta.brace",
+    "settings": {
+      "foreground": brown(75),
+      "fontStyle": "bold"
+    }
+  },
+
   # JSON and YAML
   {
     "scope": "string.unquoted.plain.out.yaml",
