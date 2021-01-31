@@ -1,0 +1,25 @@
+name: Publish on Visual Studio Code Marketplace
+on:
+  push:
+    branches:
+      - release
+jobs:
+  publish:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v1
+      - name: Build extension
+        run: |
+          export PATH="$PATH:$HOME/.local/bin"
+          pip3 install pipenv
+          pipenv sync
+          ./build.sh
+      - name: Publish extension
+        env:
+          VSCE_TOKEN: ${{ secrets.vsce_token }}
+        run: |
+          sudo npm install -g vsce
+          cd extension
+          vsce publish -p $VSCE_TOKEN
+
