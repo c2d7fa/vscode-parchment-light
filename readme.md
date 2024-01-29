@@ -10,4 +10,6 @@ Inspired in part by [Your syntax highlighter is wrong](https://jameshfisher.com/
 
 The code generating the theme is written in Python, not JavaScript, so you'll need to build it before installing it.
 
-Just install `pipenv` (e.g. with `pip install pipenv` if you already have `pip` installed), and then run `./build.sh`. This will build the extension into the `extension/` folder. Then you can install the extension from this folder like you would with any other extension.
+Run `pip install hsluv`, and then run `./build.sh`. This will build the extension into the `extension/` folder.
+
+To install the built extension, run the command *Developer: Install extension from location...* in Visual Studio Code, and then select the `extension/` folder.
