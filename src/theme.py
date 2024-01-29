@@ -10,35 +10,39 @@ def sl(s, l):
 def brown(l):
   return sl(20, l)
 
-transparent = "#00000000"
-
+trans1 = "#00000000"
 trans2 = sl(50, 20) + "10"
 trans3 = sl(50, 20) + "20"
 trans4 = sl(50, 20) + "38"
 
-hl0 = hsl(10, 6, 50)
+# Red highlight colors
 hl1 = hsl(10, 70, 40)
-hl150 = hsl(10, 70, 50)
-hl2 = hsl(10, 40, 75)
-hl11 = hsl(10, 70, 95)
+hl2 = hsl(10, 70, 50)
+hl4 = hsl(10, 70, 95)
 
-alt1 = hsl(285, 15, 45) # Comments
-alt3 = hsl(160, 30, 80) # Highlight background
+# Weak red highlight color
+whl = hsl(10, 40, 75)
 
-red1 = hl1
-blue1 = hsl(250, 50, 35)
-blue2 = hsl(250, 80, 45)
-purple1 = hsl(285, 50, 40)
-green1 = hsl(90, 50, 40)
-pink1 = hsl(350, 50, 40)
+comment = hsl(285, 15, 45) # Comments
+minimap_highlight = hsl(160, 30, 80) # Highlight background
 
-purple2 = hsl(285, 50, 70)
-blue3 = hsl(250, 50, 70)
-pink2 = hsl(350, 50, 70)
+red = hl1
+blue = hsl(250, 50, 35)
+blue_lighter = hsl(250, 50, 45)
 
-cyan0 = hsl(200, 35, 40)
-cyan3 = hsl(200, 10, 75)
-cyan4 = hsl(200, 10, 80)
+diff_modified = hsl(285, 50, 70)
+diff_deleted = hsl(250, 50, 70)
+diff_added = hsl(350, 50, 70)
+diff_modified_fg = hsl(285, 50, 40)
+diff_deleted_fg = hsl(250, 50, 40)
+diff_added_fg = hsl(350, 50, 40)
+diff_submodule_fg = hsl(90, 50, 40)
+
+string = hsl(200, 35, 40)
+
+debugging_foreground = hsl(200, 35, 40)
+debugging_border = hsl(200, 10, 75)
+debugging_background = hsl(200, 10, 80)
 
 foreground = brown(20)
 
@@ -52,19 +56,19 @@ colors = {
   "editorLineNumber.activeForeground": brown(50),
   "editorWhitespace.foreground": brown(90), # modified
   "editorRuler.foreground": brown(90),
-  "editorLink.activeForeground": blue2,
+  "editorLink.activeForeground": blue_lighter,
 
-  "editorGutter.modifiedBackground": purple2,
-  "editorGutter.addedBackground": pink2,
-  "editorGutter.deletedBackground": blue3,
+  "editorGutter.modifiedBackground": diff_modified,
+  "editorGutter.addedBackground": diff_added,
+  "editorGutter.deletedBackground": diff_deleted,
 
   # Base colors
-  "focusBorder": hl2,
+  "focusBorder": whl,
   "foreground": foreground,
   "widget.shadow": trans2,
   "selection.background": brown(70),
   "descriptionForeground": brown(40),
-  "errorForeground": red1,
+  "errorForeground": red,
   "icon.foreground": brown(40),
 
   # Window border
@@ -75,15 +79,15 @@ colors = {
   "textBlockQuote.background": brown(90),
   "textBlockQuote.border": brown(70),
   "textCodeBlock.background": brown(90),
-  "textLink.activeForeground": blue2,
-  "textLink.foreground": blue1,
+  "textLink.activeForeground": blue_lighter,
+  "textLink.foreground": blue,
   "textPreformat.foreground": brown(30),
   "textSeparator.foreground": brown(80),
 
   # Button control
   "button.background": hl1,
-  "button.foreground": hl11,
-  "button.hoverBackground": hl150,
+  "button.foreground": hl4,
+  "button.hoverBackground": hl2,
   "checkbox.background": brown(95),
   "checkbox.foreground": brown(40),
   "checkbox.border": brown(95),
@@ -118,7 +122,7 @@ colors = {
   # Editor widget
   "editorWidget.foreground": brown(40),
   "editorWidget.background": brown(98),
-  "editorWidget.border": transparent,
+  "editorWidget.border": trans1,
   "editorSuggestWidget.highlightForeground": hl1,
   "editorSuggestWidget.selectedBackground": brown(85),
 
@@ -134,7 +138,7 @@ colors = {
   "editorGroupHeader.border": brown(85),
   "editorGroupHeader.tabsBorder": brown(85),
   "tab.inactiveBackground": brown(95),
-  "tab.border": transparent,
+  "tab.border": trans1,
   "tab.inactiveForeground": brown(70),
   "tab.activeBackground": brown(93),
   "tab.activeBorder": brown(30),
@@ -157,8 +161,8 @@ colors = {
   "activityBar.inactiveForeground": brown(70),
   "activityBar.foreground": brown(50),
   "activityBar.border": brown(80),
-  "activityBarBadge.background": hl2,
-  "activityBarBadge.foreground": hl0,
+  "activityBarBadge.background": whl,
+  "activityBarBadge.foreground": hl1,
 
   # Status bar
   "statusBar.background": brown(90),
@@ -167,35 +171,35 @@ colors = {
   "statusBar.noFolderBackground": brown(90),
   "statusBar.noFolderForeground": brown(50),
   "statusBar.noFolderBorder": brown(80),
-  "statusBar.debuggingBackground": cyan4,
-  "statusBar.debuggingForeground": cyan0,
-  "statusBar.debuggingBorder": cyan3,
+  "statusBar.debuggingBackground": debugging_background,
+  "statusBar.debuggingForeground": string,
+  "statusBar.debuggingBorder": debugging_border,
   "statusBarItem.hoverBackground": brown(85),
 
   # Minimap
-  "minimap.findMatchHighlight": alt3,
+  "minimap.findMatchHighlight": minimap_highlight,
   "minimap.selectionHighlight": brown(90),
-  "minimap.errorHighlight": red1,
-  "minimap.warningHighlight": red1,
+  "minimap.errorHighlight": red,
+  "minimap.warningHighlight": red,
   "minimapSlider.background": trans2,
   "minimapSlider.hoverBackground": trans3,
   "minimapSlider.activeBackground": trans4,
 
-  "minimapGutter.modifiedBackground": purple2,
-  "minimapGutter.addedBackground": pink2,
-  "minimapGutter.deletedBackground": blue3,
+  "minimapGutter.modifiedBackground": diff_modified,
+  "minimapGutter.addedBackground": diff_added,
+  "minimapGutter.deletedBackground": diff_deleted,
 
   # Git colors
-  "gitDecoration.addedResourceForeground": pink1,
-  "gitDecoration.modifiedResourceForeground": purple1,
-  "gitDecoration.deletedResourceForeground": blue1,
+  "gitDecoration.addedResourceForeground": diff_added_fg,
+  "gitDecoration.modifiedResourceForeground": diff_modified_fg,
+  "gitDecoration.deletedResourceForeground": diff_deleted_fg,
   "gitDecoration.untrackedResourceForeground": brown(50),
   "gitDecoration.ignoredResourceForeground": brown(70),
-  "gitDecoration.conflictingResourceForeground": red1,
-  "gitDecoration.submoduleResourceForeground": green1,
+  "gitDecoration.conflictingResourceForeground": red,
+  "gitDecoration.submoduleResourceForeground": diff_submodule_fg,
 
   # Settings editor colors
-  "settings.modifiedItemIndicator": purple2,
+  "settings.modifiedItemIndicator": diff_modified,
 
   # Quick picker
   "pickerGroup.border": brown(80),
@@ -229,7 +233,7 @@ token_colors = [
   {
     "scope": "comment",
     "settings": {
-      "foreground": alt1,
+      "foreground": comment,
       "fontStyle": "bold"
     }
   },
@@ -266,7 +270,7 @@ token_colors = [
   {
     "scope": "string",
     "settings": {
-      "foreground": cyan0,
+      "foreground": string,
       "fontStyle": "italic"
     }
   },
@@ -370,7 +374,7 @@ token_colors = [
     # Inline code
     "scope": "markup.inline",
     "settings": {
-      "foreground": cyan0
+      "foreground": string
     }
   },
   {
@@ -388,20 +392,20 @@ token_colors = [
   {
     "scope": "markup.quote",
     "settings": {
-      "foreground": cyan0,
+      "foreground": string,
       "fontStyle": "italic"
     }
   },
   {
     "scope": "markup.raw.block",
     "settings": {
-      "foreground": cyan0
+      "foreground": string
     }
   },
   {
     "scope": "markup.fenced_code",
     "settings": {
-      "foreground": cyan0
+      "foreground": string
     }
   },
   {
