@@ -38,7 +38,7 @@ diff_deleted_fg = hsl(250, 50, 40)
 diff_added_fg = hsl(350, 50, 40)
 diff_submodule_fg = hsl(90, 50, 40)
 
-string = hsl(200, 35, 40)
+string = hsl(200, 50, 25)
 
 debugging_foreground = hsl(200, 35, 40)
 debugging_border = hsl(200, 10, 75)
