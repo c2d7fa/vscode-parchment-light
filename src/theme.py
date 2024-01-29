@@ -7,16 +7,13 @@ variant = sys.argv[1] if len(sys.argv) > 1 else "light"
 def hsl(h, s, l):
   return hsluv_to_hex([h, s, l])
 
-def sl(s, l):
-  return hsl(45, s, l)
-
 def brown(l):
-  return sl(0 if variant == "digitized" else 20, l)
+  return hsl(45, 0 if variant == "digitized" else 20, l)
 
 trans1 = "#00000000"
-trans2 = sl(50, 20) + "10"
-trans3 = sl(50, 20) + "20"
-trans4 = sl(50, 20) + "38"
+trans2 = brown(20) + "10"
+trans3 = brown(20) + "20"
+trans4 = brown(20) + "38"
 
 # Red highlight colors
 hl1 = hsl(10, 70, 40)
