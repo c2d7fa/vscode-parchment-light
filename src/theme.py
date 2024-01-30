@@ -3,12 +3,17 @@ import json
 from hsluv import hsluv_to_hex
 
 variant = sys.argv[1] if len(sys.argv) > 1 else "light"
+is_light = variant == "light" or variant == "digitized"
+is_brown = variant == "light" or variant == "candlelight"
 
 def hsl(h, s, l):
-  return hsluv_to_hex([h, s, l])
+  if is_light:
+    return hsluv_to_hex([h, s, l])
+  else:
+    return hsluv_to_hex([h, s, 100 - l])
 
 def brown(l):
-  return hsl(45, 0 if variant == "digitized" else 20, l)
+  return hsl(45, 20 if is_brown else 0, l)
 
 trans1 = "#00000000"
 trans2 = brown(20) + "10"

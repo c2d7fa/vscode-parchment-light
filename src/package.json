@@ -32,6 +32,16 @@
         "label": "Parchment Digitized",
         "uiTheme": "vs",
         "path": "./themes/parchment-digitized-color-theme.json"
+      },
+      {
+        "label": "Parchment Candlelight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/parchment-candlelight-color-theme.json"
+      },
+      {
+        "label": "Parchment Starlight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/parchment-starlight-color-theme.json"
       }
     ]
   }
