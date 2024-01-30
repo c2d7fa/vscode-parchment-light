@@ -1,14 +1,15 @@
 {
   "name": "parchment-light",
   "version": "1.9.0",
-  "displayName": "Parchment Light Theme",
-  "description": "Almost monochromatic, light color theme with highlighted comments",
+  "displayName": "Parchment (monochrome themes)",
+  "description": "Almost monochromatic, light and dark color theme with highlighted comments",
   "publisher": "johv",
   "icon": "icon.png",
   "keywords": [
     "color-theme",
     "theme",
     "light",
+    "dark",
     "monochrome"
   ],
   "repository": {
@@ -24,9 +25,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Parchment Light",
+        "label": "Parchment Codex",
         "uiTheme": "vs",
-        "path": "./themes/parchment-light-color-theme.json"
+        "path": "./themes/parchment-codex-color-theme.json"
       },
       {
         "label": "Parchment Digitized",
