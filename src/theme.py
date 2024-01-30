@@ -17,7 +17,7 @@ def hsl(h, s, l):
       50: 45,    60: 55,    65: 60,
       70: 65,    75: 70,    80: 75,
       85: 80,    90: 85,    93: 88,
-      95: 90,    98: 93,
+      95: 90,    98: 92,
     }
     if not l in m:
       sys.stderr.write("Warning: Unknown dark lightness " + str(l) + "\n")
@@ -44,7 +44,7 @@ hl4 = hsl(10, 70, 95)
 # Weak red highlight color
 whl = hsl(10, 40, 75)
 
-comment = hsl(285, 15, 45) # Comments
+comment = hsl(285 if is_light or not is_brown else 10, 15 if is_light else 40, 45) # Comments
 minimap_highlight = hsl(160, 30, 80) # Highlight background
 
 red = hl1
@@ -59,7 +59,7 @@ diff_deleted_fg = hsl(250, 50, 40)
 diff_added_fg = hsl(350, 50, 40)
 diff_submodule_fg = hsl(90, 50, 40)
 
-string = hsl(200, 50, 25)
+string = hsl(200 if is_light or not is_brown else 10, 50 if is_brown else 20, 25)
 
 debugging_foreground = hsl(200, 35, 40)
 debugging_border = hsl(200, 10, 75)
