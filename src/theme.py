@@ -1,4 +1,5 @@
 import sys
+
 import json
 from hsluv import hsluv_to_hex
 
@@ -10,10 +11,25 @@ def hsl(h, s, l):
   if is_light:
     return hsluv_to_hex([h, s, l])
   else:
-    return hsluv_to_hex([h, s, 100 - l])
+    m = {
+      20: 15,    25: 20,    30: 25,
+      35: 30,    40: 35,    45: 40,
+      50: 45,    60: 55,    65: 60,
+      70: 65,    75: 70,    80: 75,
+      85: 80,    90: 85,    93: 88,
+      95: 90,    98: 93,
+    }
+    if not l in m:
+      sys.stderr.write("Warning: Unknown dark lightness " + str(l) + "\n")
+    return hsluv_to_hex([h, s, 100 - (m[l] if l in m else l)])
 
 def brown(l):
-  return hsl(45, 20 if is_brown else 0, l)
+  if not is_brown:
+    return hsl(45, 0, l)
+  elif is_light:
+    return hsl(45, 25, l)
+  else:
+    return hsl(45, 50, l)
 
 trans1 = "#00000000"
 trans2 = brown(20) + "10"
@@ -49,13 +65,14 @@ debugging_foreground = hsl(200, 35, 40)
 debugging_border = hsl(200, 10, 75)
 debugging_background = hsl(200, 10, 80)
 
+background = brown(98)
 foreground = brown(20)
 
 # See https://code.visualstudio.com/api/references/theme-color.
 
 colors = {
   # Editor colors
-  "editor.background": brown(98),
+  "editor.background": background,
   "editor.foreground": foreground,
   "editorLineNumber.foreground": brown(80),
   "editorLineNumber.activeForeground": brown(50),
