@@ -60,6 +60,7 @@ diff_added_fg = hsl(350, 50, 40)
 diff_submodule_fg = hsl(90, 50, 40)
 
 string = brown(35)
+punctuation = brown(50)
 
 debugging_foreground = hsl(200, 35, 40)
 debugging_border = hsl(200, 10, 75)
@@ -280,13 +281,13 @@ token_colors = [
   {
     "scope": "punctuation.separator",
     "settings": {
-      "foreground": brown(65)
+      "foreground": punctuation
     }
   },
   {
     "scope": "punctuation.terminator",
     "settings": {
-      "foreground": brown(65)
+      "foreground": punctuation
     }
   },
   {
@@ -299,16 +300,15 @@ token_colors = [
   {
     "scope": "punctuation",
     "settings": {
-      "foreground": brown(75),
+      "foreground": punctuation,
       "fontStyle": "bold"
     }
   },
 
   {
-    # E.g. parentheses in TypeScript; like punctuation
     "scope": "meta.brace",
     "settings": {
-      "foreground": brown(75),
+      "foreground": punctuation,
       "fontStyle": "bold"
     }
   },
